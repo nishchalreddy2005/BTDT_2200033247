@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Electricity Bill Calculator</h1>
+            <p>Enter your meter readings to calculate your electricity bill on the blockchain.</p>
+        </header>
+
+        <div class="form-container">
+            <label for="prevReading">Previous Meter Reading:</label>
+            <input type="number" id="prevReading" placeholder="Enter previous reading" required>
+
+            <label for="currReading">Current Meter Reading:</label>
+            <input type="number" id="currReading" placeholder="Enter current reading" required>
+
+            <button onclick="generateBill()">Generate Bill</button>
+        </div>
+
+        <div class="bill-details" id="billDetails"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.1/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
